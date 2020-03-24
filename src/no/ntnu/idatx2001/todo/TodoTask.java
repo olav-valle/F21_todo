@@ -69,6 +69,14 @@ public class TodoTask {
     return this.done;
   }
 
+  /**
+   * Sets the status of the task to DONE.
+   *
+   */
+  public void setDone(){
+    this.done = true;
+  }
+
   @Override
   public String toString() {
     return "Todo [summary=" + summary
