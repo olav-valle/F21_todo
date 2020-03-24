@@ -1,22 +1,10 @@
 package no.ntnu.idatx2001.todo;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Iterator;
 
-public class TaskList implements Iterable<TodoTask>{
-  ArrayList<TodoTask> tasks;
-
-  public TaskList(){
-    this.tasks = new ArrayList<>();
-  }
-
-  public void addTodoTask(TodoTask todoTask){
-    this.tasks.add(todoTask);
-  }
+public interface TaskList extends Iterable<TodoTask> {
+  void addTodoTask(TodoTask todoTask);
 
   @Override
-  public Iterator<TodoTask> iterator() {
-    return this.tasks.iterator();
-  }
+  Iterator<TodoTask> iterator();
 }

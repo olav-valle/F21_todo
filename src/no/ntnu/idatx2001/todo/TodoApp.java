@@ -4,7 +4,7 @@ public class TodoApp {
   private TaskList taskList;
 
   public TodoApp(){
-    this.taskList = new TaskList();
+    this.taskList = new TaskListPlain();
   }
 
   public void addDummyTasks(){
