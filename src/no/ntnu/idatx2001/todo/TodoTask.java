@@ -2,6 +2,8 @@ package no.ntnu.idatx2001.todo;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  * Represent a task to be executed. The task has a neam or summary,
@@ -10,10 +12,20 @@ import javax.persistence.Entity;
 @Entity
 public class TodoTask implements Serializable {
 
+  @Id
+  @GeneratedValue
+  private Integer id;
   private String summary;
   private String description;
   private boolean done;
 
+
+  /**
+   * Default constructor.
+   */
+  public TodoTask(){
+
+  }
 
   /**
    * Creates an instance of TodoTask.
@@ -78,7 +90,7 @@ public class TodoTask implements Serializable {
    * Sets the status of the task to DONE.
    *
    */
-  public void setDone(){
+  public void setDone() {
     this.done = true;
   }
 

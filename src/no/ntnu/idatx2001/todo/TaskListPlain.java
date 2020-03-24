@@ -4,19 +4,25 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class TaskListPlain implements TaskList {
-  ArrayList<TodoTask> tasks;
+  private final ArrayList<TodoTask> tasks;
 
-  public TaskListPlain(){
+  public TaskListPlain() {
     this.tasks = new ArrayList<>();
   }
 
   @Override
-  public void addTodoTask(TodoTask todoTask){
+  public void addTodoTask(TodoTask todoTask) {
     this.tasks.add(todoTask);
   }
 
   @Override
   public Iterator<TodoTask> iterator() {
     return this.tasks.iterator();
+  }
+
+  @Override
+  public void close() {
+    // implements close just because?
+
   }
 }

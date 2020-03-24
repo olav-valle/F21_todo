@@ -7,4 +7,7 @@ public interface TaskList extends Iterable<TodoTask> {
 
   @Override
   Iterator<TodoTask> iterator();
+
+
+  void close();
 }
