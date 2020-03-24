@@ -4,7 +4,7 @@ public class TodoApp {
   private final TaskList taskList;
 
   public TodoApp() {
-    this.taskList = new TaskListPlain();
+    this.taskList = new TaskListDao();
   }
 
   /**

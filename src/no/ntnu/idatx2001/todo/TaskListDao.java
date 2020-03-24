@@ -7,8 +7,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-public class TaskListDao implements TaskList {
 
+public class TaskListDao implements TaskList {
   private final EntityManagerFactory emf;
   private final EntityManager em;
 
