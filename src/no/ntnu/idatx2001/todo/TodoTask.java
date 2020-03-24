@@ -1,14 +1,19 @@
 package no.ntnu.idatx2001.todo;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+
 /**
  * Represent a task to be executed. The task has a neam or summary,
  * a description and a status indicating if done or not.
  */
-public class TodoTask {
+@Entity
+public class TodoTask implements Serializable {
 
   private String summary;
   private String description;
   private boolean done;
+
 
   /**
    * Creates an instance of TodoTask.
