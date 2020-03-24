@@ -16,7 +16,8 @@
             <!-- Alternatives: create-tables, drop-and-create-tables-->
             <property name="eclipselink.ddl-generation" value="create-tables"/>
             <!-- Alternatives: FINE (logs all SQL), ALL, CONFIG, INFO, WARNING..., OFF -->
-            <property name="eclipselink.logging.level" value="OFF"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+            <!-- set value=FINE to print to log -->
 
             <!--property name="javax.persistence.sql-load-script-source" value="META-INF/sql/data.sql"/-->
 
